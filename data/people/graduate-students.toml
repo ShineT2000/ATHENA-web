@@ -1,0 +1,204 @@
+# Graduate Students
+# 한 사람 = [[group.person]] 블록 하나. 순서대로 화면에 표시됩니다.
+# 사진은 static/img/people/ 에 넣고 파일 이름만 적습니다.
+
+
+[[group]]
+title = "Ph.D. Candidates"
+divider_after = true
+
+[[group.person]]
+name = "Namgook Kim"
+photo = "namgook-kim.png"
+email = "ngkim@hanyang.ac.kr"
+education = [
+  "B.S. Nuclear Engineering, Hanyang University, 2017",
+]
+research = [
+  "Critical heat flux of ATF cladding under oxidation and Roughness effect on capillary wicking & CHF",
+]
+
+[[group.person]]
+name = "Yunsik Cho"
+photo = "yunsik-cho.png"
+email = "yunscho@hanyang.ac.kr"
+education = [
+  "B.S. Nuclear Engineering, Hanyang University, 2017",
+]
+research = [
+  "Development of computational fluid dynamics program using moving particle semi-implicit method",
+]
+
+[[group.person]]
+name = "Jae Hyung Park"
+photo = "jae-hyung-park.png"
+email = "jhpark19@hanyang.ac.kr"
+education = [
+  "B.S. Nuclear Engineering, Hanyang University, 2019",
+]
+research = [
+  "Natural circulation flow based primary system",
+]
+
+[[group.person]]
+name = "Jihun Im"
+photo = "jihun-im.jpg"
+email = "jihunlim@hanyang.ac.kr"
+education = [
+  "B.S. Nuclear Engineering, Chung-Ang University, 2020",
+]
+research = [
+  "Supercritical carbon dioxide brayton cycle",
+]
+
+[[group.person]]
+name = "Ju Hyeong Lee"
+photo = "ju-hyeong-lee.png"
+email = "juhyeonglee@hanyang.ac.kr"
+education = [
+  "B.S. Nuclear Engineering, Hanyang University, 2021",
+]
+research = [
+  "OpenFOAM analysis for molten salt reactor",
+]
+
+[[group.person]]
+name = "Won Jun Choi"
+photo = "won-jun-choi.png"
+email = "wjchoi97@hanyang.ac.kr"
+education = [
+  "B.S. Nuclear Engineering, Hanyang University, 2021",
+]
+research = [
+  "OpenFOAM analysis for molten salt reactor",
+]
+
+[[group.person]]
+name = "Hyo Jun An"
+photo = "hyo-jun-an.png"
+email = "hjan97@hanyang.ac.kr"
+education = [
+  "B.S. Nuclear Engineering, Hanyang University, 2022",
+]
+research = [
+  "MELCOR and MARS for severe accident analysis",
+]
+
+[[group]]
+title = "Ph.D. Students"
+divider_after = true
+
+[[group.person]]
+name = "Ye Hwan Chun"
+photo = "ye-hwan-chun.png"
+email = "yhchun@hanyang.ac.kr"
+education = [
+  "B.S. Mechanical Engineering, Hanbat National University",
+  "M.S. Mechanical Engineering, Kookmin University.",
+]
+research = [
+  "Computational Fluid Dynamics of Molten Salt Reactor",
+]
+
+[[group.person]]
+name = "Cheolwoong Kim"
+photo = "cheolwoong-kim.png"
+email = "cjfdnd9310@hanyang.ac.kr"
+education = [
+  "B.S. Mechanical Engineering, UNIST, 2020",
+]
+research = [
+  "Interpretation of the severe accident using artificial intelligence",
+]
+
+[[group.person]]
+name = "BERLOT Baptiste"
+photo = "berlot-baptiste.jpg"
+email = "berlot@hanyang.ac.kr"
+education = [
+  "B.S. Physics, CY Cergy Paris university, 2021",
+  "M.S. Nuclear Engineering, Conservatoire National des Arts et Métiers (CNAM), 2025",
+]
+research = [
+  "Molten Salt Reactor",
+]
+
+[[group]]
+title = "M.S. Students"
+
+[[group.person]]
+name = "Do Won Lee"
+photo = "do-won-lee.jpg"
+email = "dwlee98@hanyang.ac.kr"
+education = [
+  "B.S. Nuclear Engineering, Hanyang University, 2024.",
+]
+research = [
+  "OpenFOAM analysis for molten salt reactor",
+]
+
+[[group.person]]
+name = "Yujin Kim"
+photo = "yujin-kim.jpg"
+email = "yjkim25@hanyang.ac.kr"
+education = [
+  "B.S Nuclear Engineering, Sejong University, 2025",
+]
+research = [
+  "AI-Enhanced Nuclear Safety",
+]
+
+[[group.person]]
+name = "Ok Hyeon Lee"
+photo = "ok-hyeon-lee.png"
+email = "okhlee@hanyang.ac.kr"
+education = [
+  "B.S Mechanical Engineering, Chungnam National University, 2024",
+]
+research = [
+  "Severe accident analysis using computational codes",
+]
+
+[[group.person]]
+name = "Jaemin Han"
+photo = "jaemin-han.jpg"
+email = "hjmin29@hanyang.ac.kr"
+education = [
+  "B.S. Mechanical Engineering, University of Ulsan, 2025",
+]
+research = [
+  "CFD analysis of Molten Salt Reactor",
+]
+
+[[group.person]]
+name = "Seung Min Lee"
+photo = "seung-min-lee.jpg"
+email = "afjl53@hanyang.ac.kr"
+education = [
+  "B.S. Nuclear Engineering, Hanyang University, 2026",
+]
+research = [
+  "Molten Salt Reactor",
+]
+
+[[group.person]]
+name = "Hyunjun Chung"
+photo = "hyunjun-chung.jpg"
+email = "hjchung@hanyang.ac.kr"
+education = [
+  "B.S Quantum System Engineering, Jeonbuk National University, 2026",
+]
+research = [
+  "T.B.D",
+]
+
+[[group.person]]
+name = "Yu Seong Go"
+photo = "yu-seong-go.jpg"
+email = "ysgo00@hanyang.ac.kr"
+education = [
+  "B.S Quantum System Engineering, Jeonbuk National University, 2026",
+]
+research = [
+  "Severe accident analysis",
+]

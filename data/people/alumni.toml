@@ -1,0 +1,166 @@
+# Alumni
+# 한 사람 = [[group.person]] 블록 하나. 순서대로 화면에 표시됩니다.
+# 사진은 static/img/people/ 에 넣고 파일 이름만 적습니다.
+
+
+[[group]]
+title = "Ph.D."
+
+[[group.person]]
+name = "Chang Hyun Song"
+degree = "Ph.D. (2025)"
+thesis = "Critical Identification of Severe Accident Progression in i-SMR with Passive Core and Containment Cooling Systems"
+position = "Post-doctoral researcher at Massachusetts Institute of Technology (MIT)"
+
+[[group.person]]
+name = "Taeseok Kim"
+degree = "Ph.D. (2023)"
+thesis = "Theoretical modeling of dropwise condensation heat transfer including length effect at low heat flux"
+position = "Professor at Jeju National University"
+
+[[group.person]]
+name = "Wonjun Choi"
+degree = "Ph.D. (2022)"
+thesis = "Development of a predictive surrogate model for effective dose to facilitate the optimization of the severe accident management guidance using machine learning technique"
+position = "KAERI"
+
+[[group.person]]
+name = "Doyoung Shin"
+degree = "Ph.D. (2022)"
+thesis = "Reflood Heat Transfer of Accident Tolerant Fuel Cladding Surfaces and Its Effects on Safety of Pressurized Water Reactors"
+position = "KAERI"
+
+[[group.person]]
+name = "Joongoo Jeon"
+degree = "Ph.D. (2022)"
+thesis = "Extinction Mechanism of Ultra-Lean Hydrogen Flames for Safety of Clean Energy Systems"
+position = "Professor at POSTECH"
+
+[[group.person]]
+name = "Hong Hyun Son"
+degree = "Ph.D. (2019), M.S (2015)"
+thesis = "Investigation of Receding Capillary Flow on Engineered Surfaces and its Effect on Critical Heat Flux Enhancement"
+position = "KAERI"
+
+[[group.person]]
+name = "Uiju Jeong"
+degree = "Ph.D. (2018)"
+thesis = "Boiling Heat Transfer on a Downward-facing Inclined Wall for Application to Ex-Vessel Core Catcher System"
+position = "KHNP CRI"
+
+[[group.person]]
+name = "Gwang Hyeok Seo"
+degree = "Ph.D. (2016)"
+thesis = "Enhancement of Boiling Heat Transfer for Safety of Nuclear Systems using Surface Modification Techniques"
+position = "KINS"
+
+[[group]]
+title = "M.S."
+
+[[group.person]]
+name = "Sehee Kwon"
+degree = "M.S (2026)"
+thesis = "MELCOR and CINEMA Codes Comparison Based on Severe Accident Scenarios Initiated by the Modular Makeup and Purification System Rupture in the i-SMR System"
+position = "KHNP CRI"
+
+[[group.person]]
+name = "Geunyoung Byeon"
+degree = "M.S (2025)"
+thesis = "An Investigation of Heat Transfer Mechanisms in an Enclosed Metal Containment Vessel for an Integrated Water-Cooled Small Modular Reactor"
+position = "KAERI"
+
+[[group.person]]
+name = "Bae Joon Young"
+degree = "M.S (2025)"
+thesis = "An Applicability Study of a Deep Learning-Based Accident Prediction Framework to Support Operators during a Hypothetical Severe Accident in Pressurized Water Reactor Nuclear Power Plants"
+position = "KEPCO E&C"
+
+[[group.person]]
+name = "Yongjun Lee"
+degree = "M.S (2025)"
+thesis = "Uncertainty Analysis on the Fission Products Behavior Simulation Module of CINEMA Code based on Correlation Coefficients Analysis Derived from Linear Regression"
+position = "KEPCO E&C"
+
+[[group.person]]
+name = "Beomjin Jeong"
+degree = "M.S (2025)"
+thesis = "Investigation of Thermal Radiation Shield Effects on Reduction of Heat Loss in a Small Modular Reactor During Normal Operation"
+position = "KHNP CRI"
+
+[[group.person]]
+name = "Seung Gyu Hyeon"
+degree = "M.S (2025)"
+thesis = "Thermal-Hydraulic Behavior of Natural Circulation Small Modular Reactor Under Maritime Conditions Using MARS-KS Code"
+position = "Republic of Korea Navy (ROKN)"
+
+[[group.person]]
+name = "Geon Hyeong Lee"
+degree = "M.S (2024)"
+thesis = "A Numerical Investigation of Conjugated Heat-loss Mechanism Depending on Gas Type and Surface Emissivity of a Metal Containment Vessel in a Water-cooled Small Modular Reactor During Normal Operation"
+position = "Hyundai Engineering & Construction Co., Ltd."
+
+[[group.person]]
+name = "Hyung Ho Lee"
+degree = "M.S (2022)"
+thesis = "Sensitivity Analysis at the Time of Multi-Barrier Incident Response Strategy (MACST) in Severe Accidents"
+position = "FNC Technology Co."
+
+[[group.person]]
+name = "Hoichul Jung"
+degree = "M.S (2020)"
+thesis = "Feasibility Study of Passive Cooling Capability of Phase Change Material Loaded in Emergency Core Tank of Small Modular Reactor ATOM Using MELCOR code"
+position = "WONIK IPS"
+
+[[group.person]]
+name = "Yeonsoo Kim"
+degree = "M.S (2020)"
+thesis = "A Methodology to Predict the Flammability of Diluted H2/CO Mixture at High Temperature: Development and Application"
+position = "HYUNDAI"
+
+[[group.person]]
+name = "Min Wook Na"
+degree = "M.S (2020)"
+thesis = "Feasibility Study on Passive Residual Heat Removal System Coupled with Dry Air Cooling Tower for Small Modular Reactor ATOM Using MARS-KS code"
+position = "KINS"
+
+[[group.person]]
+name = "Nam Kyung Kim"
+degree = "M.S (2017)"
+thesis = "Investigation of Hydrogen Risk in the Major containment Compartments of OPR1000 under SBO and TLOFW Scenarios Using MELCOR code"
+position = "KINAC"
+
+[[group.person]]
+name = "Jongchan Lee"
+degree = "M.S (2017)"
+thesis = "Experimental Study on Aerosol Scrubbing Efficiency of Self-priming Scrubber Nozzle Submerged in Water Pool"
+position = "FNC Technology Co."
+
+[[group.person]]
+name = "Kyusang Song"
+degree = "M.S (2016)"
+thesis = "Evaluation of MCCI under Various Severe Accidents in OPR1000 using MELCOR code"
+position = "KHNP CRI"
+
+[[group.person]]
+name = "Yongjae Lee"
+degree = "M.S (2016)"
+thesis = "Numerical Evaluation of Effectiveness and Adverse Effect of Severe Accident Mitigation Measures for OPR1000"
+position = "KAERI"
+
+[[group.person]]
+name = "Seungwon Seo"
+degree = "M.S (2015)"
+thesis = "Evaluation of RCS mitigation Strategy with Various SAMG Entry Conditions under Severe Accident of OPR1000"
+position = "KINS"
+
+[[group.person]]
+name = "Junkyu Han"
+degree = "M.S (2015)"
+thesis = "Experimental Study of Onset of Nucleate Boiling in a Narrow Rectangular Channel at Atmospheric Pressure"
+position = "KAERI"
+
+[[group.person]]
+name = "Seongnyeon Lee"
+degree = "M.S (2014)"
+thesis = "MELCOR Analysis of RCS Depressurization Strategy and Application of Core Exit Temperature for Effective Safety Injection under Severe Accident of OPR1000"
+position = "KINS"

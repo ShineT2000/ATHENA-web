@@ -1,0 +1,11 @@
+# Researchers
+# 한 사람 = [[group.person]] 블록 하나. 순서대로 화면에 표시됩니다.
+# 사진은 static/img/people/ 에 넣고 파일 이름만 적습니다.
+
+
+[[group]]
+title = "Postdoctoral Researcher"
+divider_after = true
+
+[[group]]
+title = "Research Fellows"

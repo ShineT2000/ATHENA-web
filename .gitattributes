@@ -1,0 +1,6 @@
+# 텍스트 파일은 LF 줄바꿈으로 저장 (Windows·Mac 어디서 편집해도 불필요한 변경이 생기지 않도록)
+* text=auto eol=lf
+*.jpg binary
+*.png binary
+*.gif binary
+*.ttf binary

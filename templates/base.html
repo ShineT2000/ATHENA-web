@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>${title} | ${site_name}</title>
+  <meta name="description" content="${description}">
+  <link rel="icon" href="${logo}">
+  <link rel="stylesheet" href="/static/css/style.css">
+  <script src="/static/js/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to main content</a>
+  <button class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="sidebar">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+  </button>
+
+  <aside class="sidebar" id="sidebar">
+    <a class="sidebar-logo" href="/main"><img src="${logo}" alt="ATHENA"></a>
+    <nav aria-label="Main navigation">
+${nav}
+    </nav>
+  </aside>
+
+  <button class="search-button" type="button" aria-label="Search this site">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14"/></svg>
+  </button>
+
+  <main id="content">
+    <header class="${banner_class}" style="background-image: url('${banner}')">
+      <h1>${heading}</h1>
+${banner_extra}
+    </header>
+    <div class="page-body">
+${body}
+    </div>
+  </main>
+
+  <dialog class="search-dialog" aria-label="Search this site">
+    <form method="dialog"><button class="search-close" aria-label="Close search">×</button></form>
+    <label for="search-input">Search this site</label>
+    <input id="search-input" type="search" placeholder="Search ATHENA" autocomplete="off">
+    <div class="search-results" aria-live="polite"></div>
+  </dialog>
+</body>
+</html>

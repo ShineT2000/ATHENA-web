@@ -1,0 +1,184 @@
+# 사이트 전체 설정: 메뉴와 페이지 목록
+# 메뉴 이름(title)은 자유롭게 바꿔도 되지만, 주소(url)를 바꾸면 기존 링크가 깨집니다.
+
+name = "ATHENA Laboratory"
+description = "ATHENA — Advanced Thermal Hydraulic Engineering for Nuclear Application Laboratory, Hanyang University. Prof. Sung Joong Kim."
+logo = "/static/img/logo.png"
+# 모든 페이지의 기본 배너 사진. 페이지별로 다른 사진을 쓰려면 그 [[page]]에 banner = "..." 를 적습니다.
+banner = "/static/img/banner.jpg"
+
+[[menu]]
+title = "MAIN"
+url = "/main"
+
+[[menu]]
+title = "RESEARCH"
+url = "/research"
+children = [
+  { title = "SMR: Small Modular Reactor", url = "/research/smr-small-modular-reactor" },
+  { title = "Phase-change Heat transfer", url = "/research/phase-change-heat-transfer" },
+  { title = "Severe accident", url = "/research/severe-accident" },
+  { title = "Past Research", url = "/research/past-research" },
+]
+
+[[menu]]
+title = "PUBLICATION"
+url = "/publication"
+children = [
+  { title = "Journal", url = "/publication/journal" },
+  { title = "Conference", url = "/publication/conference" },
+  { title = "Award", url = "/publication/award" },
+]
+
+[[menu]]
+title = "PEOPLE"
+url = "/people"
+children = [
+  { title = "Principal Investigator", url = "/people/principal-investigator" },
+  { title = "Research Professors", url = "/people/research-professors" },
+  { title = "Emeritus Professor", url = "/people/emeritus-professor" },
+  { title = "Researchers", url = "/people/researchers" },
+  { title = "Graduate Students", url = "/people/graduate-students" },
+  { title = "Undergraduate Students", url = "/people/undergraduate-students" },
+  { title = "Staff", url = "/people/staff" },
+  { title = "Alumni", url = "/people/alumni" },
+]
+
+[[menu]]
+title = "CONTACT US"
+url = "/contact-us"
+
+# ── 새 방식으로 옮긴 페이지 ──────────────────────────────
+# 여기 없는 페이지는 아직 기존 사이트(../dist)의 것을 그대로 사용합니다.
+
+[[page]]
+url = "/publication/journal"
+title = "Journal"
+type = "publications"
+data = "journal.csv"
+
+[[page]]
+url = "/publication/conference"
+title = "Conference"
+type = "publications"
+data = "conference.csv"
+
+# style: professor(큰 사진, 경력은 목록) / student(작은 사진) / plain(사진 없음)
+[[page]]
+url = "/people"
+title = "PEOPLE"
+type = "hub"
+
+[[page]]
+url = "/people/principal-investigator"
+title = "Principal Investigator"
+type = "people"
+style = "professor"
+data = "people/principal-investigator.toml"
+
+[[page]]
+url = "/people/research-professors"
+title = "Research Professors"
+type = "people"
+style = "professor"
+data = "people/research-professors.toml"
+
+[[page]]
+url = "/people/emeritus-professor"
+title = "Emeritus Professor"
+type = "people"
+style = "professor"
+data = "people/emeritus-professor.toml"
+
+[[page]]
+url = "/people/researchers"
+title = "Researchers"
+type = "people"
+style = "student"
+data = "people/researchers.toml"
+
+[[page]]
+url = "/people/graduate-students"
+title = "Graduate Students"
+type = "people"
+style = "student"
+data = "people/graduate-students.toml"
+
+[[page]]
+url = "/people/undergraduate-students"
+title = "Undergraduate Students"
+type = "people"
+style = "student"
+data = "people/undergraduate-students.toml"
+
+[[page]]
+url = "/people/staff"
+title = "Staff"
+type = "people"
+style = "plain"
+data = "people/staff.toml"
+
+[[page]]
+url = "/people/alumni"
+title = "Alumni"
+type = "alumni"
+data = "people/alumni.toml"
+
+[[page]]
+url = "/publication"
+title = "PUBLICATION"
+type = "hub"
+
+[[page]]
+url = "/publication/award"
+title = "Award"
+type = "awards"
+data = "awards.csv"
+
+[[page]]
+url = "/research"
+title = "RESEARCH"
+type = "hub"
+
+# type = "html": pages/ 폴더의 HTML 파일을 본문으로 씁니다.
+[[page]]
+url = "/research/smr-small-modular-reactor"
+title = "SMR: Small Modular Reactor"
+type = "html"
+file = "research/smr-small-modular-reactor.html"
+
+[[page]]
+url = "/research/phase-change-heat-transfer"
+title = "Phase-change Heat transfer"
+type = "html"
+file = "research/phase-change-heat-transfer.html"
+
+[[page]]
+url = "/research/severe-accident"
+title = "Severe accident"
+type = "html"
+file = "research/severe-accident.html"
+
+[[page]]
+url = "/research/past-research"
+title = "Past Research"
+type = "html"
+file = "research/past-research.html"
+
+[[page]]
+url = "/contact-us"
+title = "CONTACT US"
+type = "html"
+file = "contact-us.html"
+banner = false
+
+# 메인 화면. subtitle 의 **굵게** 는 연구실 이름의 머리글자 강조입니다.
+[[page]]
+url = "/main"
+title = "MAIN"
+heading = "ATHENA"
+type = "home"
+subtitle = "**A**dvanced **T**hermal **H**ydraulic **E**ngineering\nfor **N**uclear **A**pplication Laboratory"
+tagline = "(Prof. Sung Joong Kim)"
+join = "home-join.html"
+news = "news.toml"

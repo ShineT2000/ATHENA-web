@@ -1,0 +1,12 @@
+# Undergraduate Students
+# 한 사람 = [[person]] 블록 하나. 순서대로 화면에 표시됩니다.
+# 사진은 static/img/people/ 에 넣고 파일 이름만 적습니다.
+
+
+[[person]]
+name = "Sinho Kim"
+email = "kim4star@hanyang.ac.kr"
+
+[[person]]
+name = "SangHyeok Kim"
+email = "hyksh24@hanyang.ac.kr"

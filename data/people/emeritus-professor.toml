@@ -1,0 +1,21 @@
+# Emeritus Professor
+# 한 사람 = [[person]] 블록 하나. 순서대로 화면에 표시됩니다.
+# 사진은 static/img/people/ 에 넣고 파일 이름만 적습니다.
+
+
+[[person]]
+name = "Prof. Gyoodong Jeun"
+photo = "gyoodong-jeun.png"
+lines = [
+  "Emeritus Professor at Hanyang University, Department of Nuclear Engineering",
+  "Doctor of Nuclear Engineering at Univ. of Wisconsin-Madison",
+  "",
+  "1975~1979 | Bachelor of Nuclear Engineering at Hanyang University",
+  "1979~1981 | Master of Nuclear Engineering at Hanyang University",
+  "1981~1986 | Doctor of Nuclear Engineering at Wisconsin-Madison",
+  "",
+  "1997.2~1997.8 | Visiting Professor at Wisconsin-Madison",
+  "1997.9~1998.2 | Visiting Professor at Wisconsin-Madison, POSTECH",
+  "1986 ~ 2016 | Professor at Hanyang Univ., Department of Nuclear Engineering",
+  "2016 ~ | Emeritus Professor at Hanyang Univ",
+]

@@ -1,0 +1,10 @@
+# 빌드 결과 (python build.py 로 매번 새로 만듭니다)
+dist/
+__pycache__/
+*.pyc
+# OS·편집기 부산물
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+~$*

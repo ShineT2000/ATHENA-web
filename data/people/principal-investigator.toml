@@ -1,0 +1,22 @@
+# Principal Investigator
+# 한 사람 = [[person]] 블록 하나. 순서대로 화면에 표시됩니다.
+# 사진은 static/img/people/ 에 넣고 파일 이름만 적습니다.
+
+
+[[person]]
+name = "Prof. Sung Joong Kim"
+photo = "sung-joong-kim.png"
+email = "sungjkim@hanyang.ac.kr"
+education = [
+  "B.S. Nuclear Engineering, Hanyang University, 2001",
+  "M.S. Nuclear Engineering, Seoul National University, 2003",
+  "M.S. Nuclear Science and Engineering, Massachusetts Institute of Technology, 2007",
+  "Ph.D. Nuclear Science and Engineering, Massachusetts Institute of Technology, 2009",
+]
+experience = [
+  "(2011~2017) | Assistant Professor at Hanyang University",
+  "(2017~2021) | Associate Professor at Hanyang University",
+  "(2019~2020) | The Dean of Department of Nuclear Engineering at Hanyang University",
+  "(2025) | Visiting Researcher, MIT",
+  "(2021~present) | Professor at Hanyang University",
+]

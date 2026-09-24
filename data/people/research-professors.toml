@@ -1,0 +1,48 @@
+# Research Professors
+# 한 사람 = [[person]] 블록 하나. 순서대로 화면에 표시됩니다.
+# 사진은 static/img/people/ 에 넣고 파일 이름만 적습니다.
+
+
+[[person]]
+name = "Prof. Jin Ho Song"
+photo = "jin-ho-song.png"
+email = "jhsong1123@hanyang.ac.kr"
+education = [
+  "B.S. Mechanical Engineering, Seoul National University",
+  "M. S. Mechanical Engineering, Seoul National University",
+  "Ph.D. Mechanical Engineering, Seoul National University",
+  "Visiting Scholar at Purdue University and at Duke University",
+]
+experience = [
+  "Tenured Principal Researcher at Korea Atomic Energy Research Institute (1987-2022)",
+  "Executive Editor of Nuclear Engineering and Technology (2007-2014)",
+  "Director, Severe Accident and PHWR Safety Research Division (2011-2017)",
+  "Government Advisor for WTO dispute on Fukushima Fisheries",
+  "Research Professor, Hanyang University, Department of Nuclear Engineering (2022-present)",
+  "Led severe accident experimental research program using TROI, VESTA, ARIEL, SPARC and researches for the development of integral severe accident analysis code of CINEMA",
+]
+research = [
+  "Severe Accident",
+  "Thermal-Hydraulics",
+  "Source Term for non-LWRs",
+]
+
+[[person]]
+name = "Prof. Joon-Eon Yang"
+photo = "joon-eon-yang.png"
+email = "jooneonyang@gmail.com"
+education = [
+  "B.S. Nuclear Engineering, Hanyang University",
+  "M.S. Nuclear Engineering, Korea Advanced Institute of Science and Technology",
+  "Ph.D. Nuclear Engineering, Korea Advanced Institute of Science and Technology",
+]
+experience = [
+  "Ex-Director, Integrated Safety Assessment Division, Korea Atomic Energy Research Institute",
+  "Ex-Senior Vice President, Department of Nuclear Safety & Environmental Research, Korea Atomic Energy Research Institute",
+  "Chairman (Korean side), Asian Symposium on Risk Assessment & Management",
+  "Founding Chairman, Association of Nuclear Risk Research",
+  "Research Professor, Hanyang University (2025 ~ present)",
+]
+research = [
+  "Nuclear Risk Assessment, Mangement, and Communication",
+]

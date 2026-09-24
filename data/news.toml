@@ -1,0 +1,152 @@
+# 메인 페이지 NEWS. 위에 있는 뉴스가 먼저 보입니다. 새 소식은 맨 위에 추가하세요.
+# background: 생략(흰색) / "beige"(학위·임용 등) / "brown"(대형 과제 선정 등)
+# photo: static/img/news/ 에 넣은 사진 파일 이름 (없으면 생략)
+# body: 문단 목록. **굵게** 표기 가능
+
+[[news]]
+date = "May 21, 2026"
+title = "The 4th i-SAFE-MSR Conference"
+photo = "may-21-2026-the-4th-i-safe-msr-conference.jpg"
+body = [
+  "The 4th i-SAFE-MSR Conference was successfully held at Hanyang University, providing a forum for researchers and students to exchange the latest research outcomes on Molten Salt Reactor (MSR) technologies. Jointly organized by the i-SAFE-MSR Center, MPMES Center, and HY-IEE FINT Center, the conference covered a wide range of topics including MSR safety analysis, thermal-hydraulics, fuel behavior, and advanced computational methods.",
+]
+
+[[news]]
+date = "October 23-24, 2025"
+title = "The International MSR Workshop on GAMES, Jointly Hosted by Hanyang University and MIT"
+photo = "october-23-24-2025-the-international-msr-workshop-on-games-j.jpg"
+body = [
+  "The International GAMES Workshop, jointly hosted by Hanyang University and MIT, gathered global experts to accelerate Molten Salt Reactor (MSR) deployment through advanced Modeling, Experiment, and Simulation. Focusing on these core technical pathways, the event fostered critical knowledge exchange and international collaboration between leading scholars and student researchers. This successful partnership is vital for transitioning MSR technology from research to commercial reality, paving the way for a safer, cleaner energy future.",
+]
+
+[[news]]
+date = "December 17, 2024"
+title = "Chang Hyun Song – Successfully Defended Ph.D. Thesis"
+background = "beige"
+body = [
+  "Congratulations to Chang Hyun Song on successfully defending his Ph.D. thesis.",
+]
+
+[[news]]
+date = "October 24, 2024"
+title = "Seung Gyu Hyeon - Won the Best Poster Award (KNS)"
+body = [
+  "Congratulations to Seung Gyu Hyeon on winning the Best Poster Award at the Transactions of the Korean Nuclear Society Autumn Meeting.",
+]
+
+[[news]]
+date = "October 24, 2024"
+title = "Yongjun Lee - Won the Best Poster Award (KNS)"
+body = [
+  "Congratulations to Yongjun Lee on winning the Best Poster Award at the Transactions of the Korean Nuclear Society Autumn Meeting.",
+]
+
+[[news]]
+date = "August 28, 2024"
+title = "Won Jun Choi - Won the Best Paper Award (NUTHOS)"
+body = [
+  "Congratulations to Won Jun Choi on winning the Best Paper Award at the 14th International Topical Meeting on Nuclear Reactor Thermal-Hydraulics, Operation and Safety.",
+]
+
+[[news]]
+date = "July 17, 2024"
+title = "Taeseok Kim - Tenure-Track Faculty Appointment at Jeju National University"
+background = "beige"
+body = [
+  "Congratulations to Dr. Taeseok Kim on his appointment as a tenure-track faculty member at Jeju National University.",
+]
+
+[[news]]
+date = "May 9, 2024"
+title = "Won Jun Choi - Won the Best Paper Award (KNS)"
+body = [
+  "Congratulations to Won Jun Choi on winning the Best Paper Award at the Transactions of the Korean Nuclear Society Spring Meeting.",
+]
+
+[[news]]
+date = "May 9, 2024"
+title = "Geunyoung Byeon - Won the Best Poster Award (KNS)"
+body = [
+  "Congratulations to Geunyoung Byeon on winning the Best Poster Award at the Transactions of the Korean Nuclear Society Spring Meeting.",
+]
+
+[[news]]
+date = "March 1, 2024"
+title = "ATHENA Awarded a Large-Scale HPC-Based Next-Gen Nuclear Multi-Physics Research Project"
+background = "brown"
+body = [
+  "ATHENA was selected to conduct a research project for the “High-Performance Computing-Based Next-Generation Nuclear Power Multi-Physics Analysis Innovation Research Center (고성능 연산 기반 차세대 원전 다물리 해석 혁신연구센터)” until 2029.",
+  "**Research Period**: 2024.03.01 – 2029.12.31",
+  "**Research Funds**: KRW 1 billion per year",
+  "**Research Team**: ATHENA, Hanyang University, KAIST, Hyundai Engineering & Construction Co., Ltd.",
+]
+
+[[news]]
+date = "November 27, 2023"
+title = "Jihun Im - Won the Best Poster Award (WORTH)"
+body = [
+  "Congratulations to Jihun Im on winning the Best Poster Award at the 10th Korea-China Workshop on Nuclear Reactor Thermal-Hydraulics.",
+]
+
+[[news]]
+date = "May 18, 2023"
+title = "Won Jun Choi - Won the Best Paper Award (KNS)"
+body = [
+  "Congratulations to Won Jun Choi on winning the Best Paper Award at the Transactions of the Korean Nuclear Society Spring Meeting.",
+]
+
+[[news]]
+date = "March 2, 2023"
+title = "Joongoo Jeon - Tenure-Track Faculty Appointment at Jeonbuk National University"
+background = "beige"
+body = [
+  "Congratulations to Dr. Joongoo Jeon on his appointment as a tenure-track faculty member at Jeonbuk National University.",
+]
+
+[[news]]
+date = "December 16, 2022"
+title = "Taeseok Kim – Successfully Defended Ph.D. Thesis"
+background = "beige"
+body = [
+  "Congratulations to Taeseok Kim on successfully defending his Ph.D. thesis.",
+]
+
+[[news]]
+date = "October 21, 2021"
+title = "Geon Hyeong Lee - Won the Best Paper Award"
+body = [
+  "Congratulations to Geon Hyeong Lee on receiving the Best Paper Award at the Transactions of the Korean Nuclear Society Spring Meeting.",
+]
+
+[[news]]
+date = "December 17, 2021"
+title = "W. Choi, D. Shin, and J. Jeon – Successfully Defended Ph.D. Theses"
+background = "beige"
+body = [
+  "Congratulations to W. Choi, D. Shin, and J. Jeon on successfully defending their Ph.D. theses.",
+]
+
+[[news]]
+date = "May 14, 2021"
+title = "Jihun Im - Won the Best Paper Award"
+body = [
+  "Congratulations to Jihun Im on winning the Best Paper Award at the Transactions of the Korean Nuclear Society Spring Meeting.",
+]
+
+[[news]]
+date = "June 11, 2021"
+title = "Plaque of Appreciation for Prof. Sung Joong Kim"
+body = [
+  "In appreciation of your ten years of dedicated service and commitment to student education at Hanyang University.",
+]
+
+[[news]]
+date = "April 15, 2021"
+title = "ATHENA Awarded a Large-Scale Molten-Salt Reactor (MSR) Research Project"
+background = "brown"
+body = [
+  "ATHENA was selected to conduct a research project on the Molten-Salt Reactor (MSR), an advanced small modular reactor concept that uses molten salt as a coolant in the primary system.",
+  "**Research Period**: 2021.04.15~2026.12.31",
+  "**Research Funds**: KRW 1 Billion per year",
+  "**Research Team**: ATHENA, Hanyang University, KAIST, Gachon University",
+]
