@@ -202,3 +202,14 @@ education = [
 research = [
   "Severe accident analysis",
 ]
+
+[[group.person]]
+name = "Sinho Kim"
+# photo = "sinho-kim.jpg"    ← 사진이 준비되면 static/img/people/ 에 넣고 이 줄 맨 앞의 # 을 지우세요
+email = "kim4star@hanyang.ac.kr"
+education = [
+  "B.S. Nuclear Engineering, Hanyang University, 2026",
+]
+research = [
+  "AI",
+]
