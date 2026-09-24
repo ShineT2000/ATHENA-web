@@ -1,5 +1,8 @@
 // ATHENA 웹사이트 동작: 메뉴, 모바일 메뉴, 검색, 주소(#연도)로 연도 목록 열기
 
+// 사이트가 하위 경로(예: GitHub Pages 의 /ATHENA-website)에 있을 때의 기준 경로
+const BASE = document.documentElement.dataset.base || "";
+
 // 하위 메뉴 펼치기/접기
 document.querySelectorAll(".nav-toggle").forEach((button) => {
   button.addEventListener("click", () => {
@@ -45,7 +48,7 @@ document.querySelector(".search-button").addEventListener("click", async () => {
   input.focus();
   if (index) return;
   try {
-    const response = await fetch("/search-index.json");
+    const response = await fetch(BASE + "/search-index.json");
     if (!response.ok) throw new Error(response.statusText);
     index = await response.json();
   } catch {
@@ -72,7 +75,7 @@ input.addEventListener("input", () => {
   for (const page of matches) {
     const link = document.createElement("a");
     link.className = "search-result";
-    link.href = page.route;
+    link.href = BASE + page.route;
     const title = document.createElement("strong");
     title.textContent = page.title;
     const excerpt = document.createElement("p");

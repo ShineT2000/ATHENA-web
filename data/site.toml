@@ -182,3 +182,11 @@ subtitle = "**A**dvanced **T**hermal **H**ydraulic **E**ngineering\nfor **N**ucl
 tagline = "(Prof. Sung Joong Kim)"
 join = "home-join.html"
 news = "news.toml"
+
+# 없는 주소로 들어왔을 때 보여 주는 페이지 (dist/404.html)
+[[page]]
+url = "/404"
+title = "Page not found"
+type = "html"
+file = "404.html"
+output = "404.html"

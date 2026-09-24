@@ -21,6 +21,9 @@ from string import Template
 ROOT = Path(__file__).resolve().parent
 DATA = ROOT / "data"
 DIST = ROOT / "dist"
+# 사이트가 도메인의 하위 경로에 올라갈 때의 기준 경로 (예: GitHub Pages 의 "/ATHENA-website").
+# 비워 두면 도메인 최상위(/) 기준입니다. GitHub Actions 가 자동으로 넣어 줍니다.
+BASE = os.environ.get("SITE_BASE", "").rstrip("/")
 
 
 def fail(message):
@@ -295,9 +298,19 @@ def render_html(page, site):
 def last_modified():
     """data/·pages/ 안에서 가장 최근에 고친 파일의 날짜 (메인 화면의 'Last modified')."""
     import datetime
-    files = [p for folder in (DATA, ROOT / "pages") for p in folder.rglob("*") if p.is_file()]
-    newest = max(p.stat().st_mtime for p in files)
-    day = datetime.date.fromtimestamp(newest)
+    import subprocess
+    day = None
+    if os.environ.get("GITHUB_ACTIONS"):
+        # GitHub 서버에서는 파일을 매번 새로 받으므로 수정 시각 대신 마지막 커밋 날짜를 씁니다.
+        try:
+            out = subprocess.run(["git", "log", "-1", "--format=%cs", "--", "data", "pages"],
+                                 cwd=ROOT, capture_output=True, text=True, check=True).stdout.strip()
+            day = datetime.date.fromisoformat(out) if out else None
+        except (OSError, subprocess.CalledProcessError, ValueError):
+            day = None
+    if day is None:
+        files = [p for folder in (DATA, ROOT / "pages") for p in folder.rglob("*") if p.is_file()]
+        day = datetime.date.fromtimestamp(max(p.stat().st_mtime for p in files))
     return f"{day:%B} {day.day}, {day.year}"
 
 
@@ -369,6 +382,14 @@ def render_nav(menu, current):
     return "\n".join(lines)
 
 
+def with_base(document):
+    """href="/..." · src="/..." · url('/...') 앞에 기준 경로를 붙입니다."""
+    if not BASE:
+        return document
+    document = re.sub(r'((?:href|src)=")/(?!/)', rf"\g<1>{BASE}/", document)
+    return document.replace("url('/", f"url('{BASE}/")
+
+
 def main():
     site = tomllib.loads((DATA / "site.toml").read_text(encoding="utf-8"))
     template = Template((ROOT / "templates" / "base.html").read_text(encoding="utf-8"))
@@ -404,14 +425,17 @@ def main():
             heading=html.escape(result.get("heading", page["title"])),
             nav=render_nav(site["menu"], page["url"]),
             body=result["body"],
+            base=BASE,
         )
-        target = DIST / page["url"].strip("/") / "index.html"
+        document = with_base(document)
+        target = DIST / page["output"] if page.get("output") else DIST / page["url"].strip("/") / "index.html"
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_text(document, encoding="utf-8")
         if page["url"] == site.get("home", "/main"):
             (DIST / "index.html").write_text(document, encoding="utf-8")  # 도메인 첫 화면(/)도 메인으로
 
-        search_index.append({"route": page["url"], "title": page["title"], "text": text})
+        if not page.get("output"):  # 404 같은 특수 페이지는 검색에서 제외
+            search_index.append({"route": page["url"], "title": page["title"], "text": text})
         print(f"  {page['url']}")
 
     index_path.write_text(json.dumps(search_index, ensure_ascii=False), encoding="utf-8")

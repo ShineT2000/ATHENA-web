@@ -140,9 +140,21 @@ ATHENA-website/
   dist/               빌드 결과 (직접 고치지 마세요. 빌드마다 새로 만들어집니다.)
 ```
 
-## 배포
+## 배포 (GitHub Pages)
 
-`dist/` 폴더 전체를 호스팅에 올립니다(도메인 최상위에 올려야 합니다).
+`main` 브랜치에 올리면(`git push`) GitHub가 자동으로 빌드해 배포합니다(`.github/workflows/deploy.yml`). 1~2분 걸리며, 진행 상황은 저장소의 **Actions** 탭에서 볼 수 있습니다.
+
+```powershell
+git add -A
+git commit -m "뉴스 추가: ..."
+git push
+```
+
+- 사이트 주소: `https://<GitHub 계정>.github.io/<저장소 이름>/`
+- 처음 한 번만: 저장소 **Settings → Pages → Build and deployment → Source**를 **GitHub Actions**로 설정합니다.
+- 배포가 실패하면 Actions 탭의 빨간 ✗ 항목을 열어 보세요. `[오류]`로 시작하는 줄에 어느 파일 몇 번째 줄이 문제인지 나옵니다.
+- **자체 도메인(예: athena.hanyang.ac.kr) 연결:** Settings → Pages → Custom domain에 도메인을 적고, 학교 DNS 관리자에게 `CNAME` 레코드를 `<GitHub 계정>.github.io`로 요청합니다. 경로는 자동으로 맞춰집니다.
+- 다른 곳에 올릴 때는 `dist/` 폴더 전체를 올리면 됩니다. 하위 경로에 올린다면 빌드 전에 `SITE_BASE`를 지정합니다(예: PowerShell에서 `$env:SITE_BASE="/athena"; python build.py`).
 
 ## 수정 이력 (Git)
 
@@ -156,4 +168,4 @@ git log --oneline                   # 이력 보기
 git restore data/news.toml          # 아직 커밋하지 않은 수정 되돌리기
 ```
 
-`dist/`(빌드 결과)는 매번 새로 만들어지므로 Git에 넣지 않습니다(`.gitignore`).
+`dist/`(빌드 결과)는 매번 새로 만들어지므로 Git에 넣지 않습니다(`.gitignore`). GitHub가 배포할 때 직접 빌드합니다.

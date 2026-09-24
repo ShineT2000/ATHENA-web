@@ -223,6 +223,10 @@ main { margin-left: var(--sidebar-width); }
 .news-item.bg-brown { --bleed: #827153; color: #fff; }
 .news-item.bg-brown h3 { color: #fffaf1; }
 
+/* 404 페이지 */
+.not-found { margin: 48px 0; font-size: 18px; text-align: center; }
+.not-found a { color: var(--heading); }
+
 /* ── 검색 ─────────────────────────────── */
 .search-button {
   position: absolute; top: 12px; right: 14px; z-index: 90; width: 40px; height: 40px;
