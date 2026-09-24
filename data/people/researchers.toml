@@ -7,5 +7,18 @@
 title = "Postdoctoral Researcher"
 divider_after = true
 
+[[group.person]]
+name = "Jae Hyung Park"
+photo = "jae-hyung-park.png"
+email = "jhpark19@hanyang.ac.kr"
+education = [
+  "B.S. Nuclear Engineering, Hanyang University, 2019",
+  "Ph.D. Nuclear Engineering, Hanyang University, 2026",
+]
+research = [
+  "Natural circulation flow based primary system",
+]
+keywords = ["자연순환", "SMR", "안전해석", "피동안전계통"]
+
 [[group]]
 title = "Research Fellows"

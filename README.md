@@ -75,6 +75,7 @@ position = "KAERI"
 ```
 
 - **칸 이름:** `education`(학력), `experience`(경력), `research`(연구 분야), `lines`(제목 없는 자유 문단. 빈 문자열 `""`은 문단 구분)
+- **입학 연월·키워드:** `since = "2026.03"`은 이름 옆에 `(2026.03~)`로, `keywords = ["MSR", "CFD"]`는 연구 분야 아래 `KEY WORD #MSR #CFD`로 표시됩니다. 둘 다 없으면 줄을 지우면 됩니다.
 - **기간 열 맞추기:** `"2011~2017 | Assistant Professor"`처럼 ` | `로 나누면 기간과 내용이 열로 정렬됩니다.
 - **제목 표기(Education 또는 EDUCATION)와 사진 크기:** `site.toml`에서 페이지의 `style` 값(`professor`, `student`, `plain`)으로 정해집니다.
 - 따옴표나 쉼표가 빠지는 등 형식이 틀리면 빌드할 때 몇 번째 줄인지 알려 줍니다.

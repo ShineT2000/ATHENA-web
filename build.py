@@ -170,7 +170,8 @@ def render_person(person, style, where):
         img = f'<img src="/static/img/people/{esc(photo)}" alt="{esc(person["name"])}" loading="lazy">' if photo else ""
         parts.append(f'<div class="person-photo">{img}</div>')
 
-    info = [f'<h3 class="person-name">{esc(person["name"])}</h3>']
+    since = f' <span class="person-since">({esc(person["since"])}~)</span>' if person.get("since") else ""
+    info = [f'<h3 class="person-name">{esc(person["name"])}{since}</h3>']
     if person.get("lines"):
         paragraphs, current = [], []
         for line in person["lines"] + [""]:
@@ -190,6 +191,9 @@ def render_person(person, style, where):
             info.append('<ul class="person-list">' + "".join(f"<li>{period_line(i)}</li>" for i in items) + "</ul>")
         else:
             info.append('<div class="person-text">' + "".join(f'<p class="line">{period_line(i)}</p>' for i in items) + "</div>")
+    if person.get("keywords"):
+        tags = " ".join(f"#{esc(k)}" for k in person["keywords"])
+        info.append(f'<p class="person-keywords"><strong>KEY WORD</strong> {tags}</p>')
     if person.get("email"):
         info.append(f'<a class="person-email" href="mailto:{esc(person["email"])}">{esc(person["email"])}</a>')
     parts.append('<div class="person-info">' + "".join(info) + "</div>")
@@ -199,7 +203,7 @@ def render_person(person, style, where):
 
 def person_text(person):
     values = [person.get(k, "") for k in ("name", "degree", "thesis", "position", "email")]
-    for key in ("lines", "education", "experience", "research"):
+    for key in ("lines", "education", "experience", "research", "keywords"):
         items = person.get(key) or []
         values += [items] if isinstance(items, str) else [i.replace(" | ", " ") for i in items]
     return " ".join(v for v in values if v)
