@@ -5,7 +5,7 @@
 
 
 [[group]]
-title = "Ph.D. Candidates"
+title = "M.S. - Ph.D. Integrated Students"
 divider_after = true
 
 [[group.person]]
@@ -86,6 +86,58 @@ research = [
 ]
 keywords = ["SMR", "시스템코드", "피동안전계통", "중대사고"]
 
+[[group.person]]
+name = "Cheolwoong Kim"
+since = "2023.03"
+photo = "cheolwoong-kim.png"
+email = "cjfdnd9310@hanyang.ac.kr"
+education = [
+  "B.S. Mechanical Engineering, UNIST, 2021",
+]
+research = [
+  "Interpretation of the severe accident using AI",
+]
+keywords = ["중대사고해석", "불확실도", "인공지능", "i-SMR"]
+
+[[group.person]]
+name = "Do Won Lee"
+since = "2024.09"
+photo = "do-won-lee.jpg"
+email = "dwlee98@hanyang.ac.kr"
+education = [
+  "B.S. Nuclear Engineering, Hanyang University, 2024.",
+]
+research = [
+  "Numerical analysis of safety and source term for MSR",
+]
+keywords = ["MSR", "안전해석", "CFD", "선원항"]
+
+[[group.person]]
+name = "Seung Min Lee"
+since = "2026.03"
+photo = "seung-min-lee.jpg"
+email = "afjl53@hanyang.ac.kr"
+education = [
+  "B.S. Nuclear Engineering, Hanyang University, 2026",
+]
+research = [
+  "safety analysis and neutronics analysis for MSR",
+]
+keywords = ["MSR", "다물리", "시스템열수력해석"]
+
+[[group.person]]
+name = "Hyunjun Chung"
+since = "2026.03"
+photo = "hyunjun-chung.jpg"
+email = "hjchung@hanyang.ac.kr"
+education = [
+  "B.S Quantum System Engineering, Jeonbuk National University, 2026",
+]
+research = [
+  "i-SMR severe accident analysis and MSR core design",
+]
+keywords = ["중대사고", "i-SMR", "MSR"]
+
 [[group]]
 title = "Ph.D. Students"
 divider_after = true
@@ -105,19 +157,6 @@ research = [
 keywords = ["열유체", "MSR", "CFD", "고화용융"]
 
 [[group.person]]
-name = "Cheolwoong Kim"
-since = "2023.03"
-photo = "cheolwoong-kim.png"
-email = "cjfdnd9310@hanyang.ac.kr"
-education = [
-  "B.S. Mechanical Engineering, UNIST, 2021",
-]
-research = [
-  "Interpretation of the severe accident using AI",
-]
-keywords = ["중대사고해석", "불확실도", "인공지능", "i-SMR"]
-
-[[group.person]]
 name = "BERLOT Baptiste"
 since = "2025.09"
 photo = "berlot-baptiste.jpg"
@@ -133,19 +172,6 @@ keywords = ["GAMMA+", "MSR"]
 
 [[group]]
 title = "M.S. Students"
-
-[[group.person]]
-name = "Do Won Lee"
-since = "2024.09"
-photo = "do-won-lee.jpg"
-email = "dwlee98@hanyang.ac.kr"
-education = [
-  "B.S. Nuclear Engineering, Hanyang University, 2024.",
-]
-research = [
-  "Numerical analysis of safety and source term for MSR",
-]
-keywords = ["MSR", "안전해석", "CFD", "선원항"]
 
 [[group.person]]
 name = "Yujin Kim"
@@ -184,32 +210,6 @@ research = [
   "CFD analysis of Molten Salt Reactor",
 ]
 keywords = ["CFD", "열수력해석", "MSR"]
-
-[[group.person]]
-name = "Seung Min Lee"
-since = "2026.03"
-photo = "seung-min-lee.jpg"
-email = "afjl53@hanyang.ac.kr"
-education = [
-  "B.S. Nuclear Engineering, Hanyang University, 2026",
-]
-research = [
-  "safety analysis and neutronics analysis for MSR",
-]
-keywords = ["MSR", "다물리", "시스템열수력해석"]
-
-[[group.person]]
-name = "Hyunjun Chung"
-since = "2026.03"
-photo = "hyunjun-chung.jpg"
-email = "hjchung@hanyang.ac.kr"
-education = [
-  "B.S Quantum System Engineering, Jeonbuk National University, 2026",
-]
-research = [
-  "i-SMR severe accident analysis and MSR core design",
-]
-keywords = ["중대사고", "i-SMR", "MSR"]
 
 [[group.person]]
 name = "Yu Seong Go"
