@@ -7,6 +7,11 @@
 title = "Ph.D."
 
 [[group.person]]
+name = "Jae Hyung Park"
+degree = "Ph.D. (2026)"
+position = "Hanyang University"
+
+[[group.person]]
 name = "Chang Hyun Song"
 degree = "Ph.D. (2025)"
 thesis = "Critical Identification of Severe Accident Progression in i-SMR with Passive Core and Containment Cooling Systems"
