@@ -15,10 +15,10 @@ url = "/main"
 title = "RESEARCH"
 url = "/research"
 children = [
-  { title = "SMR: Small Modular Reactor", url = "/research/smr-small-modular-reactor" },
-  { title = "Phase-change Heat transfer", url = "/research/phase-change-heat-transfer" },
-  { title = "Severe accident", url = "/research/severe-accident" },
-  { title = "Past Research", url = "/research/past-research" },
+  { title = "Reactor Design", url = "/research/reactor-design" },
+  { title = "Safety Analysis", url = "/research/safety-analysis" },
+  { title = "Severe Accident", url = "/research/severe-accident" },
+  { title = "AI for Nuclear Safety", url = "/research/ai-for-nuclear-safety" },
 ]
 
 [[menu]]
@@ -142,28 +142,28 @@ type = "hub"
 
 # type = "html": pages/ 폴더의 HTML 파일을 본문으로 씁니다.
 [[page]]
-url = "/research/smr-small-modular-reactor"
-title = "SMR: Small Modular Reactor"
+url = "/research/reactor-design"
+title = "Reactor Design"
 type = "html"
-file = "research/smr-small-modular-reactor.html"
+file = "research/reactor-design.html"
 
 [[page]]
-url = "/research/phase-change-heat-transfer"
-title = "Phase-change Heat transfer"
+url = "/research/safety-analysis"
+title = "Safety Analysis"
 type = "html"
-file = "research/phase-change-heat-transfer.html"
+file = "research/safety-analysis.html"
 
 [[page]]
 url = "/research/severe-accident"
-title = "Severe accident"
+title = "Severe Accident"
 type = "html"
 file = "research/severe-accident.html"
 
 [[page]]
-url = "/research/past-research"
-title = "Past Research"
+url = "/research/ai-for-nuclear-safety"
+title = "AI for Nuclear Safety"
 type = "html"
-file = "research/past-research.html"
+file = "research/ai-for-nuclear-safety.html"
 
 [[page]]
 url = "/contact-us"
