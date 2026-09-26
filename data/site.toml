@@ -108,7 +108,7 @@ data = "people/graduate-students.toml"
 url = "/people/undergraduate-students"
 title = "Undergraduate Students"
 type = "people"
-style = "student"
+style = "plain"
 data = "people/undergraduate-students.toml"
 
 [[page]]
