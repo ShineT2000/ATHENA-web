@@ -1,10 +1,18 @@
-# main 브랜치에 올릴 때마다 사이트를 빌드해 GitHub Pages 에 배포합니다.
+# main 또는 preview 브랜치에 올릴 때마다 사이트를 빌드해 GitHub Pages 에 배포합니다.
+#   main    → 공개 사이트      https://shinet2000.github.io/ATHENA-web/
+#   preview → 시안 미리보기    https://shinet2000.github.io/ATHENA-web/preview/
+# 어느 쪽을 올려도 두 브랜치를 모두 새로 빌드해서 함께 배포합니다(Pages 는 사이트를 하나만 받기 때문).
+# preview 에 올리면 preview-trigger.yml 이 먼저 돌고, 끝나면 이 워크플로가 main 기준으로 실행됩니다.
+# (Pages 배포 환경은 기본적으로 main 브랜치에서만 배포를 허용하기 때문)
 # 처음 한 번: 저장소 Settings → Pages → Build and deployment → Source 를 "GitHub Actions" 로 선택하세요.
 name: Deploy to GitHub Pages
 
 on:
   push:
     branches: [main]
+  workflow_run:
+    workflows: [Preview trigger]
+    types: [completed]
   workflow_dispatch:        # Actions 탭에서 수동으로 다시 배포할 수도 있습니다.
 
 permissions:
@@ -22,20 +30,50 @@ jobs:
     steps:
       - uses: actions/checkout@v7
         with:
+          ref: main
+          path: main
           fetch-depth: 0    # 메인 화면 "Last modified" 날짜를 커밋 기록에서 읽기 위해 전체 기록을 받습니다.
       - id: pages
         uses: actions/configure-pages@v6
       - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
-      - name: Build site
+      - name: Build site (main)
+        working-directory: main
         run: python build.py
         env:
           # 저장소 주소 경로(/저장소이름). 자체 도메인을 연결하면 자동으로 빈 값이 됩니다.
           SITE_BASE: ${{ steps.pages.outputs.base_path }}
+
+      - name: Check preview branch
+        id: preview
+        working-directory: main
+        run: |
+          if git ls-remote --exit-code --heads origin preview > /dev/null; then
+            echo "exists=true" >> "$GITHUB_OUTPUT"
+          fi
+      - uses: actions/checkout@v7
+        if: steps.preview.outputs.exists == 'true'
+        with:
+          ref: preview
+          path: preview
+          fetch-depth: 0
+      - name: Build site (preview)
+        if: steps.preview.outputs.exists == 'true'
+        working-directory: preview
+        run: |
+          python build.py
+          # 검색엔진에 노출되지 않게 하고, 화면 오른쪽 아래에 시안 표시를 붙입니다.
+          find dist -name '*.html' -exec sed -i \
+            -e 's|<head>|<head>\n<meta name="robots" content="noindex, nofollow">|' \
+            -e 's|</body>|<div style="position:fixed;right:12px;bottom:12px;z-index:999;padding:4px 10px;border-radius:4px;background:#c0392b;color:#fff;font:700 12px/1.6 Arial,sans-serif;pointer-events:none">PREVIEW</div>\n</body>|' {} +
+          mv dist ../main/dist/preview
+        env:
+          SITE_BASE: ${{ steps.pages.outputs.base_path }}/preview
+
       - uses: actions/upload-pages-artifact@v5
         with:
-          path: dist
+          path: main/dist
 
   deploy:
     needs: build

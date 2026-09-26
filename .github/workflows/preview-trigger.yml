@@ -1,0 +1,16 @@
+# preview 브랜치에 올리면 실행되어, 끝나는 즉시 deploy.yml 이 미리보기까지 포함해 다시 배포합니다.
+# 실제 빌드·배포는 deploy.yml 에서 합니다.
+name: Preview trigger
+
+on:
+  push:
+    branches: [preview]
+
+permissions:
+  contents: read
+
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "preview 브랜치가 갱신되었습니다 (${GITHUB_SHA}). deploy.yml 이 이어서 배포합니다."

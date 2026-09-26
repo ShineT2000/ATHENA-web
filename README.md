@@ -157,6 +157,26 @@ git push
 - **자체 도메인(예: athena.hanyang.ac.kr) 연결:** Settings → Pages → Custom domain에 도메인을 적고, 학교 DNS 관리자에게 `CNAME` 레코드를 `<GitHub 계정>.github.io`로 요청합니다. 경로는 자동으로 맞춰집니다.
 - 다른 곳에 올릴 때는 `dist/` 폴더 전체를 올리면 됩니다. 하위 경로에 올린다면 빌드 전에 `SITE_BASE`를 지정합니다(예: PowerShell에서 `$env:SITE_BASE="/athena"; python build.py`).
 
+### 시안 미리보기 (`preview` 브랜치)
+
+공개 사이트에 올리기 전에 디자인을 다른 사람에게 보여 주고 싶을 때 씁니다. `preview` 브랜치에 올리면 공개 사이트는 그대로 두고 `https://<GitHub 계정>.github.io/<저장소 이름>/preview/`에만 반영됩니다. 미리보기 화면 오른쪽 아래에는 빨간 **PREVIEW** 표시가 붙고, 검색엔진에는 노출되지 않습니다(링크를 아는 사람은 누구나 볼 수 있음).
+
+```powershell
+git switch preview          # 시안 작업 브랜치로 이동
+git merge main              # (선택) 공개 사이트의 최신 내용부터 가져오기
+# ... 파일 수정, python build.py 로 로컬 확인 ...
+git add -A
+git commit -m "시안: ..."
+git push                    # → /preview/ 에 1~2분 뒤 반영
+
+# 시안이 확정되면 공개 사이트에 반영
+git switch main
+git merge preview
+git push
+```
+
+- `preview`에 올리면 `preview-trigger.yml`이 먼저 돌고, 이어서 `deploy.yml`이 공개 사이트와 미리보기를 함께 다시 배포합니다.
+
 ## 수정 이력 (Git)
 
 이 폴더는 Git으로 관리됩니다. 고친 뒤에는 이력을 남겨 두세요.
