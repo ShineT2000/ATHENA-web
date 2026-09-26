@@ -7,10 +7,3 @@
 name = "Sanghyeok Kim"
 since = "2026.01"
 email = "hyksh24@hanyang.ac.kr"
-education = [
-  "2024.03~ Nuclear Engineering, Hanyang University",
-]
-research = [
-  "Moving Particle Semi-implicit Method (MPS)",
-]
-keywords = ["MPS"]
