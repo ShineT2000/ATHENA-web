@@ -1,23 +1,61 @@
-    <section class="topic cols-2">
-      <div class="col">
-        <h2>Severe Accident</h2>
-        <div class="carousel" style="aspect-ratio: 1.2">
-          <img src="/static/img/pages/severe-accident-1.png" alt="">
-          <img src="/static/img/pages/severe-accident-2.png" alt="">
-          <img src="/static/img/pages/severe-accident-3.png" alt="">
-          <img src="/static/img/pages/severe-accident-4.jpg" alt="">
-        </div>
+    <section class="rs-intro">
+      <h2>Severe Accident</h2>
+      <p class="rs-ko">중대사고 종합해석코드와 CFD를 이용한 원전 중대사고 해석</p>
+      <p>Since the Fukushima Daiichi accident in 2011, understanding severe accidents has become essential for nuclear safety. ATHENA develops plant models of operating reactors (OPR1000, APR1400) and new designs (i-SMR, MSR), and analyzes severe accident progression, containment phenomena and source terms with integrated codes including MELCOR, MAAP and CINEMA. The ultimate goal is to derive the most effective accident management strategies for mitigating accident progression.</p>
+    </section>
+
+    <section class="rs-topic" id="integrated">
+      <h3>Integrated severe accident analysis of LWRs and SMRs</h3>
+      <p class="rs-ko">OPR1000·i-SMR 입력모델 개발과 MELCOR·CINEMA 기반 사고 진행 해석</p>
+      <ul class="rs-tags"><li>MELCOR</li><li>CINEMA</li><li>i-SMR</li></ul>
+      <p>We develop plant input models for large PWRs and the i-SMR and simulate severe accident sequences from core degradation to containment response. For the i-SMR, we evaluate the mitigation performance of the flooding safety system, analyze total loss of feedwater scenarios, and compare the severe accident phenomena predicted by MELCOR and the Korean code CINEMA, including the development of MELCOR standard input for independent regulatory verification.</p>
+      <div class="rs-figs">
+        <figure>
+          <img src="/static/img/research/severe-accident-integrated-1.png" alt="MELCOR nodalization of the OPR1000 reactor coolant system, secondary system and passive residual heat removal system." loading="lazy">
+          <figcaption><strong>Fig. 1.</strong> MELCOR nodalization of the OPR1000 reactor coolant system, secondary system and passive residual heat removal system.</figcaption>
+        </figure>
       </div>
-      <div class="col">
-        <h3>introduction</h3>
-        <p>원자력발전소 안전성 증진을 위한 중대사고 연구</p>
-        <p>Comprehensive Analysis of Severe Accidents to Enhance Nuclear Power Plant Safety</p>
-        <p>2011년 후쿠시마 원자력발전소 사고 이후, 원전 중대사고 해석의 중요성이 강조되어 왔음. <br>OPR1000, APR1400 등 가동 원전과 i-SMR 같은 신규 원전의 발전소 입력모델을 개발하고, MELCOR, MAAP, CINEMA 등 중대사고 종합해석코드로 노형별 사고 시나리오를 분석함. 특히 국산 중대사고 해석코드 CINEMA의 불확실도 분석과 코드 고도화에 참여하고 있으며, 방사선원항 평가, 노심용융물-콘크리트 반응(MCCI), 수소 연소를 다룸. 용융염원자로에 대해서는 누설 용융염의 고화·용융 거동, 코어캐처 설계, 핵분열생성물 거동을 CFD, MPS, 자체 코드로 연구함. 최종 목표는 사고 진행을 가장 효과적으로 완화하는 사고관리전략을 도출하는 것임.</p>
-        <p>Since the Fukushima Daiichi accident in 2011, understanding severe accidents in nuclear power plants has become essential. <br>We develop plant input models for operating reactors such as OPR1000 and APR1400 and for new designs such as the i-SMR, and analyze severe accident scenarios with integrated codes including MELCOR, MAAP and CINEMA. We contribute to the Korean severe accident code CINEMA through uncertainty analysis and code improvement, and study source terms, molten core-concrete interaction (MCCI) and hydrogen combustion. For molten salt reactors, we investigate the solidification and melting of leaked salt, core catcher design and fission product behavior using CFD, the moving particle semi-implicit (MPS) method and in-house codes. The ultimate goal is to derive the most effective accident management strategies for mitigating accident progression.</p>
-        <h3>papers</h3>
-        <p>1) Evaluation on mitigation performance of flooding safety system under hypothetical loss of coolant accident in Korean i-SMR with MELCOR code<br><a href="https://doi.org/10.1016/j.nucengdes.2025.113950" target="_blank" rel="noopener">Published article (2025)</a></p>
-        <p>2) Performance evaluation of an improved pool scrubbing system for thermally-induced steam generator tube rupture accident in OPR1000<br><a href="https://doi.org/10.1016/j.net.2023.12.005" target="_blank" rel="noopener">Published article (2024)</a></p>
-        <p>3) Assessment of corium concrete interaction and impact of water ingression mechanism using top flooding strategy for a small PWR with MELCOR 2.2<br><a href="https://doi.org/10.1016/j.anucene.2022.109601" target="_blank" rel="noopener">Published article (2023)</a></p>
-        <p>4) Numerical analysis on in-core ignition and subsequent flame propagation to containment in OPR1000 under loss of coolant accident<br><a href="https://doi.org/10.1016/j.net.2022.03.023" target="_blank" rel="noopener">Published article (2022)</a></p>
+    </section>
+
+    <section class="rs-topic" id="cinema">
+      <h3>CINEMA uncertainty analysis and source term</h3>
+      <p class="rs-ko">국산 중대사고 해석코드 CINEMA의 불확실도 분석과 방사선원항 평가</p>
+      <ul class="rs-tags"><li>CINEMA</li><li>Uncertainty</li><li>Source term</li></ul>
+      <p>CINEMA is the integrated severe accident code developed in Korea, linking modules for reactor coolant system thermal-hydraulics (CSPACE), containment (SACAP) and fission product behavior (SIRIUS). We contribute to its improvement through uncertainty and sensitivity analyses of LOCA scenarios in OPR1000, time-step and nodalization studies, and assessments of how thermal-hydraulic coupling affects fission product release and transport.</p>
+      <div class="rs-figs">
+        <figure>
+          <img src="/static/img/research/severe-accident-cinema-2.png" alt="Module structure of the CINEMA code: SIRIUS, CSPACE and SACAP exchange thermal-hydraulic and fission product data through the master module." loading="lazy">
+          <figcaption><strong>Fig. 2.</strong> Module structure of the CINEMA code: SIRIUS, CSPACE and SACAP exchange thermal-hydraulic and fission product data through the master module.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="rs-topic" id="containment">
+      <h3>Containment phenomena: hydrogen, MCCI and fission product scrubbing</h3>
+      <p class="rs-ko">수소 연소, 노심용융물-콘크리트 반응(MCCI), 풀 스크러빙 등 격납건물 현상 해석</p>
+      <ul class="rs-tags"><li>MELCOR</li><li>Containment</li><li>Accident management</li></ul>
+      <p>The integrity of the containment determines how much radioactive material is released. We analyze hydrogen generation, in-core ignition and flame propagation into the containment, molten core-concrete interaction and corium coolability under top flooding, and the performance of an improved pool scrubbing system for thermally induced steam generator tube rupture.</p>
+      <div class="rs-figs">
+        <figure>
+          <img src="/static/img/research/severe-accident-containment-3.jpg" alt="Containment nodalization of OPR1000 with igniters and passive autocatalytic recombiners (PARs)." loading="lazy">
+          <figcaption><strong>Fig. 3.</strong> Containment nodalization of OPR1000 with igniters and passive autocatalytic recombiners (PARs).</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="rs-topic" id="msr-sa">
+      <h3>Severe accidents of molten salt reactors</h3>
+      <p class="rs-ko">누설 용융염의 퍼짐·고화, 용융염 풀 냉각성, 핵분열생성물 방출 해석</p>
+      <ul class="rs-tags"><li>MSR</li><li>CFD</li><li>MPS</li></ul>
+      <p>In an MSR accident, leaked fuel salt spreads and solidifies on the containment floor while generating decay heat, and radionuclides are released depending on the salt chemistry. We simulate salt spill, spreading and solidification with ANSYS Fluent, OpenFOAM and the moving particle semi-implicit (MPS) method, evaluate the coolability of molten salt pools for core catcher design, and couple OpenFOAM with the thermochemistry code GEMS to predict fission product release.</p>
+      <div class="rs-figs rs-figs-2">
+        <figure>
+          <img src="/static/img/research/severe-accident-msr-sa-4.png" alt="MPS simulation of molten salt spill and spreading on the containment floor." loading="lazy">
+          <figcaption><strong>Fig. 4.</strong> MPS simulation of molten salt spill and spreading on the containment floor.</figcaption>
+        </figure>
+        <figure>
+          <img src="/static/img/research/severe-accident-msr-sa-5.png" alt="Calculation flow of the coupled OpenFOAM-GEMS framework for radionuclide release from molten salt." loading="lazy">
+          <figcaption><strong>Fig. 5.</strong> Calculation flow of the coupled OpenFOAM-GEMS framework for radionuclide release from molten salt.</figcaption>
+        </figure>
       </div>
     </section>

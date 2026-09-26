@@ -1,22 +1,61 @@
-    <section class="topic cols-2">
-      <div class="col">
-        <h2>Reactor Design <small>(SMR, MSR)</small></h2>
-        <div class="carousel" style="aspect-ratio: 1.2">
-          <img src="/static/img/pages/reactor-design-1.png" alt="">
-          <img src="/static/img/pages/reactor-design-2.png" alt="">
-          <img src="/static/img/pages/reactor-design-3.png" alt="">
-          <img src="/static/img/pages/reactor-design-4.png" alt="">
-        </div>
+    <section class="rs-intro">
+      <h2>Reactor Design <small>(SMR, MSR)</small></h2>
+      <p class="rs-ko">소형모듈원자로(SMR)와 용융염원자로(MSR) 같은 차세대 원자로의 개념 설계와 성능 평가</p>
+      <p>Advanced reactors such as small modular reactors (SMRs) and molten salt reactors (MSRs) rely on passive, natural-circulation-driven operation to achieve high inherent safety. ATHENA develops conceptual designs of these reactors and evaluates their performance by combining thermal-hydraulic experiments, computational fluid dynamics (CFD) and multi-physics simulation. Our main target is the Passive Molten Salt Fast Reactor (PMFR), a multi-purpose natural-circulation molten salt fast reactor, together with natural-circulation water-cooled SMRs.</p>
+    </section>
+
+    <section class="rs-topic" id="pmfr">
+      <h3>Passive Molten Salt Fast Reactor (PMFR)</h3>
+      <p class="rs-ko">헬륨 주입으로 자연순환을 강화하는 다목적 소형 용융염 고속로 개념 설계</p>
+      <ul class="rs-tags"><li>MSR</li><li>Natural circulation</li><li>Conceptual design</li></ul>
+      <p>The PMFR is a compact molten salt fast reactor in which the fuel salt circulates without pumps. Helium injected below the core lifts the fuel salt through the riser, and the heat is transferred to the secondary system by a helical-coil heat exchanger integrated in the reactor vessel. The injected helium also removes gaseous and noble-metal fission products through the off-gas system. We establish the design concepts and requirements of the PMFR and evaluate its thermal-hydraulic feasibility, natural circulation characteristics and power-conversion options including hydrogen production.</p>
+      <div class="rs-figs">
+        <figure>
+          <img src="/static/img/research/reactor-design-pmfr-1.png" alt="Schematic of the PMFR: helium injection below the core, riser, helical-coil heat exchanger and off-gas system inside a metal containment." loading="lazy">
+          <figcaption><strong>Fig. 1.</strong> Schematic of the PMFR: helium injection below the core, riser, helical-coil heat exchanger and off-gas system inside a metal containment.</figcaption>
+        </figure>
       </div>
-      <div class="col">
-        <h3>introduction</h3>
-        <p>차세대 원자로의 피동안전 설계 연구</p>
-        <p>Passive Safety Design of Advanced Reactors: SMR and MSR</p>
-        <p>소형모듈원자로(SMR)와 용융염원자로(MSR) 같은 차세대 원자로에 대해 계통 개념 설계와 성능 평가를 수행함. <br>대표적으로 다목적 자연순환 소형용융염고속로(PMFR)를 대상으로, 헬륨 주입으로 자연순환 유량을 높이는 개념을 실험 루프와 CFD로 검증하고, OpenFOAM·OpenMC를 연계한 다물리 해석과 자체 개발 계통 코드 기반 최적화로 노심·계통 설계를 개선함. 경수형 SMR에 대해서는 금속격납용기를 활용한 무한냉각 피동안전계통을 개발함.</p>
-        <p>We develop conceptual designs and evaluate the performance of advanced reactors, including small modular reactors (SMRs) and molten salt reactors (MSRs). <br>For the Passive Molten Salt Fast Reactor (PMFR), we investigate helium-bubble lift that enhances natural circulation, using a scaled two-phase loop experiment together with CFD. We also couple OpenFOAM and OpenMC for multi-physics analysis of the core, and optimize the primary and passive safety systems with an in-house system code. For water-cooled SMRs, we develop passive safety systems that achieve long-term inexhaustible cooling using a metal containment vessel.</p>
-        <h3>papers</h3>
-        <p>1) Experimental and numerical assessment of helium bubble lift during natural circulation for passive molten salt fast reactor<br><a href="https://doi.org/10.1016/j.net.2023.12.016" target="_blank" rel="noopener">Published article (2024)</a></p>
-        <p>2) Multiphysics analysis of natural circulation-driven operation of passive molten salt fast reactor and effect of guide structure<br><a href="https://doi.org/10.1155/er/6052359" target="_blank" rel="noopener">Published article (2025)</a></p>
-        <p>3) Development of an on-demand flooding safety system achieving long-term inexhaustible cooling of small modular reactors employing metal containment vessel<br><a href="https://doi.org/10.1016/j.net.2024.02.012" target="_blank" rel="noopener">Published article (2024)</a></p>
+    </section>
+
+    <section class="rs-topic" id="helium">
+      <h3>Helium-bubble lift and two-phase natural circulation</h3>
+      <p class="rs-ko">헬륨 기포에 의한 자연순환 강화 효과를 실험 루프와 CFD로 검증</p>
+      <ul class="rs-tags"><li>TH experiment</li><li>CFD</li><li>Scaling law</li></ul>
+      <p>Injecting helium bubbles increases the buoyancy head and thus the natural circulation flow rate of the fuel salt. We quantify this effect with an adiabatic air-water two-phase loop equipped with high-speed visualization and ultrasonic flow measurement, and reproduce the results with CFD. Scaling laws are developed to link a lab-scale two-phase molten salt loop to the full-scale PMFR, including the distortion that arises from reduced height.</p>
+      <div class="rs-figs">
+        <figure>
+          <img src="/static/img/research/reactor-design-helium-2.jpg" alt="Adiabatic two-phase natural circulation loop for helium-bubble lift experiments: (a) dimensions and (b) photograph." loading="lazy">
+          <figcaption><strong>Fig. 2.</strong> Adiabatic two-phase natural circulation loop for helium-bubble lift experiments: (a) dimensions and (b) photograph.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="rs-topic" id="multiphysics">
+      <h3>Multi-physics analysis of the MSR core</h3>
+      <p class="rs-ko">OpenFOAM·OpenMC·GeN-Foam 연계 해석으로 노심의 열수력-중성자 거동 평가</p>
+      <ul class="rs-tags"><li>Multi-physics</li><li>CFD</li><li>Neutronics</li></ul>
+      <p>In an MSR, the fuel itself flows, so the thermal-hydraulics and neutronics of the core are tightly coupled: temperature and flow fields change the reactivity, and delayed neutron precursors drift with the salt. We couple CFD (OpenFOAM, GeN-Foam) with Monte Carlo neutronics (OpenMC, Serpent) to analyze natural-circulation-driven operation, core stability, the effect of flow-guide structures and the response to marine rolling motion for ship-based applications.</p>
+      <div class="rs-figs">
+        <figure>
+          <img src="/static/img/research/reactor-design-multiphysics-3.png" alt="Axisymmetric core geometry of the PMFR used for coupled neutronics and thermal-hydraulic analysis." loading="lazy">
+          <figcaption><strong>Fig. 3.</strong> Axisymmetric core geometry of the PMFR used for coupled neutronics and thermal-hydraulic analysis.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="rs-topic" id="ncsmr">
+      <h3>Natural-circulation SMR with on-demand flooding</h3>
+      <p class="rs-ko">금속격납용기와 침수안전계통을 적용한 무한냉각 자연순환 SMR 설계</p>
+      <ul class="rs-tags"><li>SMR</li><li>Passive safety</li><li>System code</li></ul>
+      <p>For water-cooled SMRs, we develop a natural-circulation SMR employing a metal containment vessel (MCV) and an on-demand flooding safety system. When an accident occurs, water from a common pool floods the gap around the MCV, and decay heat is removed indefinitely by boiling and condensation without operator action or external power. The design is evaluated with MARS-KS for extended-term cooling and multi-module configurations.</p>
+      <div class="rs-figs rs-figs-2">
+        <figure>
+          <img src="/static/img/research/reactor-design-ncsmr-4.png" alt="Concept of the on-demand flooding safety system for multi-module SMRs sharing a common pool." loading="lazy">
+          <figcaption><strong>Fig. 4.</strong> Concept of the on-demand flooding safety system for multi-module SMRs sharing a common pool.</figcaption>
+        </figure>
+        <figure>
+          <img src="/static/img/research/reactor-design-ncsmr-5.jpg" alt="Primary and passive safety systems of the natural-circulation SMR with a metal containment vessel." loading="lazy">
+          <figcaption><strong>Fig. 5.</strong> Primary and passive safety systems of the natural-circulation SMR with a metal containment vessel.</figcaption>
+        </figure>
       </div>
     </section>

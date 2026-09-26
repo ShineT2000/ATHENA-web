@@ -1,22 +1,65 @@
-    <section class="topic cols-2">
-      <div class="col">
-        <h2>Safety Analysis</h2>
-        <div class="carousel" style="aspect-ratio: 1.2">
-          <img src="/static/img/pages/safety-analysis-1.png" alt="">
-          <img src="/static/img/pages/safety-analysis-2.jpg" alt="">
-          <img src="/static/img/pages/safety-analysis-3.png" alt="">
-          <img src="/static/img/pages/safety-analysis-4.png" alt="">
-        </div>
+    <section class="rs-intro">
+      <h2>Safety Analysis</h2>
+      <p class="rs-ko">시스템 코드와 열수력 실험을 이용한 원전 및 피동안전계통의 안전해석</p>
+      <p>New reactors must demonstrate that their safety systems can remove decay heat under design basis accidents and design extension conditions. ATHENA evaluates the accident mitigation capability of nuclear power plants and passive safety systems using thermal-hydraulic system codes such as MARS-KS, SPACE, MELCOR and GAMMA+, and supports the models with separate-effect experiments on condensation, boiling and radiative heat transfer.</p>
+    </section>
+
+    <section class="rs-topic" id="ismr">
+      <h3>Accident analysis of the innovative SMR (i-SMR)</h3>
+      <p class="rs-ko">i-SMR의 LOCA·비LOCA 사고와 피동계통 고장 조건에서 사고 완화 능력 평가</p>
+      <ul class="rs-tags"><li>i-SMR</li><li>System code</li><li>LOCA</li></ul>
+      <p>The Korean innovative SMR (i-SMR) removes decay heat with passive systems such as the passive auxiliary feedwater system (PAFS), the passive emergency core cooling system (PECCS) and the passive containment cooling system (PCCS). We build detailed plant input models and analyze representative LOCA and non-LOCA scenarios, multiple failures of passive safety valves, and heat-load sharing between PAFS and PCCS when PECCS fails.</p>
+      <div class="rs-figs rs-figs-2">
+        <figure>
+          <img src="/static/img/research/safety-analysis-ismr-1.jpg" alt="(a) i-SMR reactor module and (b) passive safety systems (PAFS, PECCS, PCCS) connected to the emergency cooling tank." loading="lazy">
+          <figcaption><strong>Fig. 1.</strong> (a) i-SMR reactor module and (b) passive safety systems (PAFS, PECCS, PCCS) connected to the emergency cooling tank.</figcaption>
+        </figure>
+        <figure>
+          <img src="/static/img/research/safety-analysis-ismr-2.jpg" alt="MELCOR nodalization of the i-SMR reactor building, containment and secondary system." loading="lazy">
+          <figcaption><strong>Fig. 2.</strong> MELCOR nodalization of the i-SMR reactor building, containment and secondary system.</figcaption>
+        </figure>
       </div>
-      <div class="col">
-        <h3>introduction</h3>
-        <p>시스템 코드와 실험을 이용한 원전 안전해석</p>
-        <p>Safety Analysis with System Codes and Thermal-Hydraulic Experiments</p>
-        <p>설계기준사고부터 설계확장조건까지, 원전과 피동안전계통이 사고를 얼마나 잘 완화하는지 평가함. <br>MARS-KS, SPACE, MELCOR, GAMMA+ 등 시스템 코드로 혁신형 SMR(i-SMR)의 냉각재상실사고(LOCA)와 비LOCA 사고, 피동 밸브 고장, 해양 운동 조건을 해석하고, 침수안전계통(FSS)의 밸브 크기 같은 설계 변수를 도출함. 응축, 임계열유속(CHF), 금속격납용기 복사 열손실 실험으로 해석 모델을 뒷받침하고, 용융염원자로에 대해서도 계통 수준의 열수력 안전성을 분석함.</p>
-        <p>We assess how well nuclear power plants and their passive safety systems mitigate accidents, from design basis accidents to design extension conditions. <br>Using system codes such as MARS-KS, SPACE, MELCOR and GAMMA+, we analyze LOCA and non-LOCA transients, passive valve failures and ocean-motion conditions for the innovative SMR (i-SMR), and derive design parameters such as the valve size of the flooding safety system (FSS). Condensation, critical heat flux (CHF) and metal-containment radiative heat-loss experiments support these models. We also evaluate the system-level thermal-hydraulic safety of molten salt reactors.</p>
-        <h3>papers</h3>
-        <p>1) Evaluation of accident mitigation capability of passive core and containment cooling systems of i-SMR under representative LOCA and non-LOCA conditions<br><a href="https://doi.org/10.1016/j.net.2025.103556" target="_blank" rel="noopener">Published article (2025)</a></p>
-        <p>2) Safety implications of multiple passive safety valve failures in an i-SMR design<br><a href="https://doi.org/10.1016/j.pnucene.2025.106065" target="_blank" rel="noopener">Published article (2026)</a></p>
-        <p>3) Strategic analysis on sizing of flooding valve for successful accident management of small modular reactor<br><a href="https://doi.org/10.1016/j.net.2023.11.025" target="_blank" rel="noopener">Published article (2024)</a></p>
+    </section>
+
+    <section class="rs-topic" id="mcv">
+      <h3>Metal containment vessel and flooding safety system</h3>
+      <p class="rs-ko">금속격납용기의 열손실 저감과 침수안전계통 설계 변수 도출</p>
+      <ul class="rs-tags"><li>SMR</li><li>CFD</li><li>TH experiment</li></ul>
+      <p>A metal containment vessel is compact but loses heat by radiation during normal operation, while it must reject decay heat efficiently during an accident. We measure and simulate radiative and convective heat transfer across the MCV gap for different filling gases and emissivities, test radiation shielding, and determine design parameters of the flooding safety system such as the flooding valve size and MCV wall thickness.</p>
+      <div class="rs-figs">
+        <figure>
+          <img src="/static/img/research/safety-analysis-mcv-3.png" alt="Heat-loss mechanisms of the MCV: CFD for different filling gases, radiation shielding, and the experimental facility with its CFD model." loading="lazy">
+          <figcaption><strong>Fig. 3.</strong> Heat-loss mechanisms of the MCV: CFD for different filling gases, radiation shielding, and the experimental facility with its CFD model.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="rs-topic" id="heat-transfer">
+      <h3>Condensation and boiling heat transfer</h3>
+      <p class="rs-ko">피동계통 성능을 좌우하는 응축·비등 열전달 실험과 코드 모델 검증</p>
+      <ul class="rs-tags"><li>TH experiment</li><li>Model validation</li></ul>
+      <p>Passive containment cooling relies on condensation, and core cooling depends on boiling and critical heat flux (CHF). We carry out experiments on dropwise and filmwise condensation, flow-boiling CHF and reflood heat transfer of accident-tolerant fuel cladding, develop mechanistic models from the data, and assess the condensation models implemented in the SPACE and MARS-KS codes.</p>
+      <div class="rs-figs rs-figs-2">
+        <figure>
+          <img src="/static/img/research/safety-analysis-heat-transfer-4.jpg" alt="Dropwise condensation on a vertical surface: (a) droplet and rivulet regions, (b, c) visualization." loading="lazy">
+          <figcaption><strong>Fig. 4.</strong> Dropwise condensation on a vertical surface: (a) droplet and rivulet regions, (b, c) visualization.</figcaption>
+        </figure>
+        <figure>
+          <img src="/static/img/research/safety-analysis-heat-transfer-5.png" alt="Visualization of pool boiling, flow boiling up to CHF, and safety injection experiments." loading="lazy">
+          <figcaption><strong>Fig. 5.</strong> Visualization of pool boiling, flow boiling up to CHF, and safety injection experiments.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="rs-topic" id="msr-safety">
+      <h3>Passive safety of molten salt reactors</h3>
+      <p class="rs-ko">상변화물질(PCM) 피동안전계통 등 용융염원자로의 계통 수준 안전성 분석</p>
+      <ul class="rs-tags"><li>MSR</li><li>System code</li><li>Passive safety</li></ul>
+      <p>For the PMFR, we develop a passive safety system that fills the space between the reactor vessel and the containment with a phase change material (PCM), absorbing decay heat as latent heat. System-level thermal-hydraulic behavior and safety of MSRs are analyzed with GAMMA+ and MELCOR, and freeze-valve release models are investigated for fuel salt drain.</p>
+      <div class="rs-figs">
+        <figure>
+          <img src="/static/img/research/safety-analysis-msr-safety-6.png" alt="PCM-based passive safety system of the PMFR: PCM cells between the reactor vessel and the containment vessel." loading="lazy">
+          <figcaption><strong>Fig. 6.</strong> PCM-based passive safety system of the PMFR: PCM cells between the reactor vessel and the containment vessel.</figcaption>
+        </figure>
       </div>
     </section>

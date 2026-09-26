@@ -13,7 +13,7 @@ https://athena.hanyang.ac.kr/ (Google Sites)의 20개 페이지를 옮겨 온 �
 | 저널·학회 논문 | `data/journal.csv`, `data/conference.csv` |
 | 수상 | `data/awards.csv` (`year`, `award` 두 칸) |
 | 구성원·졸업생 | `data/people/*.toml` (사진은 `static/img/people/`) |
-| 연구 분야 4개 | `pages/research/*.html` (그림은 `static/img/pages/`) |
+| 연구 분야 4개 | `pages/research/*.html` (그림은 `static/img/research/`). 세부 주제 하나는 `<section class="rs-topic">` 블록 하나이고, 이전 간단한 형식은 `pages/research/_backup-2026-09-26/`에 보관 |
 | 연락처·지도 | `pages/contact-us.html` |
 | 메뉴 이름·순서, 페이지 목록 | `data/site.toml` |
 | 색상·글꼴·간격 | `static/css/style.css` (맨 위 `:root` 변수) |

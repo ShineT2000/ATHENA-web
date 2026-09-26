@@ -225,6 +225,24 @@ main { margin-left: var(--sidebar-width); }
 .news-item.bg-brown { --bleed: #827153; color: #fff; }
 .news-item.bg-brown h3 { color: #fffaf1; }
 
+/* RESEARCH 상세 페이지: 도입 + 세부 주제(번호, 설명, 그림, 관련 논문) */
+.rs-intro { margin: 44px 0 16px; }
+.rs-intro h2 { margin: 0 0 8px; color: var(--heading); font: 700 26pt/1.5 var(--font-name); }
+.rs-intro h2 small { font-size: 18pt; }
+.rs-intro > p { margin: 0 0 16px; text-align: justify; }
+.rs-ko { color: #6a6a6a; font-weight: 700; }
+.rs-topic { margin: 0; padding: 48px 0 8px; border-top: 1px solid rgba(0, 0, 0, .12); scroll-margin-top: 16px; }
+.rs-intro + .rs-topic { margin-top: 36px; }
+.rs-topic h3 { margin: 0 0 6px; color: var(--heading); font: 700 22pt/1.4 var(--font-heading); }
+.rs-topic > p { margin: 0 0 16px; text-align: justify; }
+.rs-tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 16px; padding: 0; list-style: none; }
+.rs-tags li { padding: 2px 10px; border-radius: 12px; background: #eef4f5; color: var(--group); font-size: 13px; }
+.rs-figs { display: grid; grid-template-columns: minmax(0, 680px); justify-content: center; gap: 24px; margin: 24px 0; }
+.rs-figs-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; }
+.rs-figs figure { margin: 0; }
+.rs-figs img { display: block; width: 100%; height: auto; max-height: 460px; object-fit: contain; background: #fff; }
+.rs-figs figcaption { margin-top: 8px; color: #555; font-size: 14px; line-height: 1.5; }
+
 /* 404 페이지 */
 .not-found { margin: 48px 0; font-size: 18px; text-align: center; }
 .not-found a { color: var(--heading); }
@@ -285,6 +303,12 @@ body:has(.banner-none) .search-button { color: #6a6a6a; }   /* 배너 없는 페
   .contact h2 { margin-top: 32px; font-size: 20pt; padding-left: 0; }
   .contact .map { height: 300px; }
   .join { font-size: 12pt; }
+  .rs-intro { margin-top: 32px; }
+  .rs-intro h2 { font-size: 22pt; }
+  .rs-intro > p, .rs-topic > p { text-align: left; }
+  .rs-topic { padding-top: 36px; }
+  .rs-topic h3 { font-size: 18pt; }
+  .rs-figs-2 { grid-template-columns: 1fr; }
 }
 @media (max-width: 479px) {
   .banner { height: 250px; padding: 40px 16px; }
