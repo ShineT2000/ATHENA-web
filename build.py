@@ -371,7 +371,9 @@ def render_nav(menu, current):
         if not children:
             lines.append(f'      <div class="nav-item">{link}</div>')
             continue
-        is_open = any(c["url"] == current for c in children)
+        is_open = entry["url"] == current or any(c["url"] == current for c in children)
+        # 상위 메뉴를 누르면 첫 번째 하위 페이지로 바로 이동 (예: RESEARCH → Reactor Design)
+        link = f'<a href="{children[0]["url"]}"{here}>{html.escape(entry["title"])}</a>'
         sub = "".join(
             f'<a href="{c["url"]}"' + (' aria-current="page"' if c["url"] == current else "")
             + f'>{html.escape(c["title"])}</a>'
