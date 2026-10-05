@@ -18,7 +18,7 @@ education = [
 research = [
   "Natural circulation flow based primary system",
 ]
-keywords = ["자연순환", "SMR", "안전해석", "피동안전계통"]
+keywords = ["자연순환 SMR", "피동안전"]
 
 [[group]]
 title = "Research Fellows"

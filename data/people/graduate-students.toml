@@ -32,7 +32,7 @@ education = [
 research = [
   "Severe accident analysis using MPS and evaluation of fission product",
 ]
-keywords = ["MPS", "중대사고", "MSR"]
+keywords = ["MPS", "중대사고", "MSR", "FP"]
 
 [[group.person]]
 name = "Jihun Im"
@@ -45,7 +45,7 @@ education = [
 research = [
   "MATLAB-based system design improvement of the PMFR",
 ]
-keywords = ["MSR", "피동안전계통", "동력변환계통"]
+keywords = ["피동안전", "MSR", "동력변환"]
 
 [[group.person]]
 name = "Ju Hyeong Lee"
@@ -84,7 +84,7 @@ education = [
 research = [
   "Severe accident analysis using System Code",
 ]
-keywords = ["SMR", "시스템코드", "피동안전계통", "중대사고"]
+keywords = ["SMR", "System code", "Passive safety"]
 
 [[group.person]]
 name = "Cheolwoong Kim"
@@ -97,7 +97,7 @@ education = [
 research = [
   "Interpretation of the severe accident using AI",
 ]
-keywords = ["중대사고해석", "불확실도", "인공지능", "i-SMR"]
+keywords = ["중대사고", "UQ", "i-SMR", "AI"]
 
 [[group.person]]
 name = "Do Won Lee"
@@ -110,7 +110,7 @@ education = [
 research = [
   "Numerical analysis of safety and source term for MSR",
 ]
-keywords = ["MSR", "안전해석", "CFD", "선원항"]
+keywords = ["MSR", "안전", "CFD", "선원항"]
 
 [[group.person]]
 name = "Seung Min Lee"
@@ -123,7 +123,7 @@ education = [
 research = [
   "safety analysis and neutronics analysis for MSR",
 ]
-keywords = ["MSR", "다물리", "시스템열수력해석"]
+keywords = ["MSR", "Multiphysics", "System TH"]
 
 [[group.person]]
 name = "Hyunjun Chung"
@@ -168,7 +168,7 @@ education = [
 research = [
   "Molten Salt Reactor",
 ]
-keywords = ["GAMMA+", "MSR"]
+keywords = ["MSR", "자연순환", "동특성", "안정성"]
 
 [[group]]
 title = "M.S. Students"
@@ -184,6 +184,7 @@ education = [
 research = [
   "AI-Enhanced Nuclear Safety",
 ]
+keywords = ["중대사고", "ML", "피동안전"]
 
 [[group.person]]
 name = "Ok Hyeon Lee"
@@ -196,7 +197,7 @@ education = [
 research = [
   "Uncertainty quantification of severe accident using CINEMA",
 ]
-keywords = ["중대사고", "불확실도", "CINEMA"]
+keywords = ["중대사고", "UQ", "CINEMA"]
 
 [[group.person]]
 name = "Jaemin Han"
@@ -209,7 +210,7 @@ education = [
 research = [
   "CFD analysis of Molten Salt Reactor",
 ]
-keywords = ["CFD", "열수력해석", "MSR"]
+keywords = ["CFD", "열수력", "MSR"]
 
 [[group.person]]
 name = "Yu Seong Go"
@@ -222,7 +223,7 @@ education = [
 research = [
   "Severe accident analysis",
 ]
-keywords = ["중대사고", "시스템코드", "i-SMR"]
+keywords = ["중대사고", "System code", "AI"]
 
 [[group.person]]
 name = "Sinho Kim"
@@ -235,4 +236,4 @@ education = [
 research = [
   "AI for Nuclear Safety",
 ]
-keywords = ["Reliability", "Alignment", "Risk Analysis"]
+keywords = ["ML 신뢰성", "Alignment", "Risk"]
