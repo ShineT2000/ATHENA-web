@@ -50,7 +50,7 @@ url = "/news"
 children = [
   { title = "PROJECT", url = "/news/project" },
   { title = "EVENT", url = "/news/event" },
-  { title = "GALLARY", url = "/news/gallary" },
+  { title = "GALLERY", url = "/news/gallery" },
 ]
 
 [[menu]]
@@ -192,10 +192,10 @@ type = "html"
 file = "news/event.html"
 
 [[page]]
-url = "/news/gallary"
-title = "GALLARY"
+url = "/news/gallery"
+title = "GALLERY"
 type = "html"
-file = "news/gallary.html"
+file = "news/gallery.html"
 
 [[page]]
 url = "/contact-us"
