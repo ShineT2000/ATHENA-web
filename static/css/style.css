@@ -111,6 +111,10 @@ main { margin-left: var(--sidebar-width); }
   margin: 14px 0 30px; color: var(--heading);
   font: 700 26pt/52px var(--font-name);
 }
+@media (min-width: 768px) {
+  .person.photo-small .person-name,
+  .person.photo-large .person-name { margin-top: -14px; }
+}
 .person-label { margin: 1.38em 0 0; font: 700 14pt/1.38 Arial, sans-serif; }
 .person-name + .person-label { margin-top: 0; }
 .person-since { font-size: .6em; }   /* 입학 연월: 이름과 같은 색·굵기, 크기만 작게 */

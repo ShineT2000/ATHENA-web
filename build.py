@@ -7,6 +7,7 @@
 """
 import csv
 import html
+import hashlib
 import html.parser
 import json
 import os
@@ -399,6 +400,7 @@ def with_base(document):
 def main():
     site = tomllib.loads((DATA / "site.toml").read_text(encoding="utf-8"))
     template = Template((ROOT / "templates" / "base.html").read_text(encoding="utf-8"))
+    style_version = hashlib.sha256((ROOT / "static/css/style.css").read_bytes()).hexdigest()[:12]
 
     # dist 폴더 자체는 두고 내용만 지웁니다(미리보기 서버가 켜져 있어도 동작하도록).
     DIST.mkdir(exist_ok=True)
@@ -432,6 +434,7 @@ def main():
             nav=render_nav(site["menu"], page["url"]),
             body=result["body"],
             base=BASE,
+            style_version=style_version,
         )
         document = with_base(document)
         target = DIST / page["output"] if page.get("output") else DIST / page["url"].strip("/") / "index.html"
