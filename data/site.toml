@@ -45,6 +45,15 @@ children = [
 ]
 
 [[menu]]
+title = "NEWS"
+url = "/news"
+children = [
+  { title = "PROJECT", url = "/news/project" },
+  { title = "EVENT", url = "/news/event" },
+  { title = "GALLARY", url = "/news/gallary" },
+]
+
+[[menu]]
 title = "CONTACT US"
 url = "/contact-us"
 
@@ -164,6 +173,29 @@ url = "/research/ai-for-nuclear-safety"
 title = "AI for Nuclear Safety"
 type = "html"
 file = "research/ai-for-nuclear-safety.html"
+
+[[page]]
+url = "/news"
+title = "NEWS"
+type = "hub"
+
+[[page]]
+url = "/news/project"
+title = "PROJECT"
+type = "html"
+file = "news/project.html"
+
+[[page]]
+url = "/news/event"
+title = "EVENT"
+type = "html"
+file = "news/event.html"
+
+[[page]]
+url = "/news/gallary"
+title = "GALLARY"
+type = "html"
+file = "news/gallary.html"
 
 [[page]]
 url = "/contact-us"
